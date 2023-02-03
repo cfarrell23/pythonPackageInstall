@@ -9,6 +9,7 @@ def zipFiles(path):
         for filename in files:
             zipf.write(os.path.abspath(os.path.join(root, filename)), arcname=filename)
     zipf.close()
+    print(zipf)
 
 if __name__== "__main__":
     zipFiles("test-files")
